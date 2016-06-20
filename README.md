@@ -15,8 +15,8 @@ Módulo Administrativo:
 
 - A máquina tem uma quantidade fixa de fôrmas. O número de ingredientes não pode ultrapassar o numero de formas
 
--Não é permitido o cadastrar mais de um ingrediente na mesma forma 
+- Não é permitido o cadastrar mais de um ingrediente na mesma forma 
 
--O administrador pode realizar manutenções nas fôrmas
+- O administrador pode realizar manutenções nas fôrmas
 
--O cadastro do ingrediente café é obrigatório
+- O cadastro do ingrediente café é obrigatório
