@@ -19,4 +19,3 @@ Módulo Administrativo:
 
 - O administrador pode realizar manutenções nas fôrmas
 
-- O cadastro do ingrediente café é obrigatório
