@@ -13,7 +13,7 @@ Módulo Administrativo:
 
 - As fôrmas, a bandeja de troco e de lucro possuem limites de capacidade. Inserção de quantidades que superem o limite não são autorizadas;
 
-- A máquina tem uma quantidade fixa de fôrmas. O número de ingredientes não pode ultrapassar o numero de formas
+- A máquina tem uma quantidade fixa de fôrmas. O número de ingredientes não pode ultrapassar o numero de fôrmas
 
 - Não é permitido cadastrar mais de um ingrediente na mesma fôrma 
 
