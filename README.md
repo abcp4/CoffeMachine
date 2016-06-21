@@ -11,11 +11,11 @@ Módulo Administrativo:
 
 - O administrador pode verificar a quantidade de ingredientes/copos disponíveis e repor caso necessário;
 
-- As fôrmas, a bandeja de troco e de lucro possuem limites de capacidade. Inserção de quantidades que superem o limite não são autorizadas;
+- Os recipientes, a bandeja de troco e de lucro possuem limites de capacidade. Inserção de quantidades que superem o limite não são autorizadas;
 
-- A máquina tem uma quantidade fixa de fôrmas. O número de ingredientes não pode ultrapassar o numero de fôrmas
+- A máquina tem uma quantidade fixa de recipientes. O número de ingredientes não pode ultrapassar o numero de recipientes;
 
-- Não é permitido cadastrar mais de um ingrediente na mesma fôrma 
+- Não é permitido cadastrar mais de um ingrediente no mesmo recipiente; 
 
-- O administrador pode repor os insumos nas fôrmas
+- O administrador pode repor os insumos nos recipientes;
 
