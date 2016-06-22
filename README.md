@@ -19,3 +19,4 @@ Módulo Administrativo:
 
 - O administrador pode repor os insumos nos recipientes;
 
+Obs: A água vem da tubulação é filtrada e armazenada em um reservatório interno ou colocada de forma manual. A máquina apenas verifica quantidade de água e faz retirada.
