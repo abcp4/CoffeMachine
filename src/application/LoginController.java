@@ -12,17 +12,27 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 public class LoginController implements Initializable {
 
     @FXML //  fx:id="homeButton"
     private Button homeButton; // Value injected by FXMLLoader
+    @FXML
+    private TextField nameInput;
+    @FXML
+    private TextField passInput;
+    @FXML
+    private Button loginButton;
 
     @Override // This method is called by the FXMLLoader when initialization is complete
     public void initialize(URL fxmlFileLocation, ResourceBundle resources) {
         assert homeButton != null : "fx:id=\"homeButton\" was not injected: check your FXML file 'LoginView.fxml'.";
-
+        assert loginButton != null : "fx:id=\"loginButton\" was not injected: check your FXML file 'LoginView.fxml'.";
+        assert nameInput != null : "fx:id=\"nameInput\" was not injected: check your FXML file 'LoginView.fxml'.";
+        assert passInput != null : "fx:id=\"passInput\" was not injected: check your FXML file 'LoginView.fxml'.";
+        
         // initialize your logic here: all @FXML variables will have been injected
         homeButton.setOnAction(new EventHandler<ActionEvent>() {
         	Stage stage; 
@@ -42,6 +52,21 @@ public class LoginController implements Initializable {
                  stage.show();
             }
         });
+                
+        loginButton.setOnAction(new EventHandler<ActionEvent>() {
+        	@Override
+            public void handle(ActionEvent event) {
+        		boolean isAlphaNum = (nameInput.getText()).matches("[A-Za-z0-9]+");
+        		if(isAlphaNum && !passInput.getText().isEmpty()){
+        			System.out.println("Username: "+nameInput.getText());
+	        		System.out.println("Password: "+passInput.getText());
+        		}
+        		else
+        			System.out.println("Erro!");
+            }
+        });        
     }
+    
+    
 
 }

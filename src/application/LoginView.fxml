@@ -49,15 +49,15 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <TextField GridPane.columnIndex="1" />
-            <PasswordField GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" text="Entrar" translateX="90.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="nameInput" GridPane.columnIndex="1" />
+            <PasswordField fx:id="passInput" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="loginButton" mnemonicParsing="false" text="Entrar" translateX="90.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <Hyperlink text="Esqueci minha senha" translateX="30.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
          </children>
       </GridPane>
       <Button fx:id="homeButton" layoutY="337.0" mnemonicParsing="false">
          <graphic>
-            <ImageView fx:id="homeBu" fitHeight="55.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="55.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../assets/imgs/home.png" />
                </image>
