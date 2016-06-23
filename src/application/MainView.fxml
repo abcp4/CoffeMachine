@@ -6,8 +6,21 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 
-<StackPane prefHeight="150.0" prefWidth="200.0" xmlns:fx="http://javafx.com/fxml" fx:controller="application.MainController">
-  <children>
-    <Button fx:id="myButton" mnemonicParsing="false" text="Button" />
-  </children>
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <TabPane>
+         <tabs>
+            <Tab>
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="myButton" layoutX="534.0" layoutY="8.0" mnemonicParsing="false" text="Button" />
+                        <Label layoutX="272.0" layoutY="169.0" stylesheets="@../../assets/style/fonts.css" text="Hello World!" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
 </StackPane>
