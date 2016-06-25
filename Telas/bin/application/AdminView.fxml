@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ProgressBarController">
+   <children>
+      <SplitPane dividerPositions="0.2608695652173913" layoutX="200.0" layoutY="83.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <SplitMenuButton layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text="Café">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Cadastrar" />
+                        <MenuItem mnemonicParsing="false" text="Editar" />
+                      <MenuItem mnemonicParsing="false" text="Remover café" />
+                    </items>
+                  </SplitMenuButton>
+                  <SplitMenuButton layoutX="14.0" layoutY="51.0" mnemonicParsing="false" text="Ingredientes ">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Cadastrar" />
+                        <MenuItem mnemonicParsing="false" text="Editar" />
+                        <MenuItem mnemonicParsing="false" text="Remover ingrediente" />
+                     </items>
+                  </SplitMenuButton>
+                  <Button layoutX="106.0" layoutY="359.0" mnemonicParsing="false" text="Sair" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <SplitPane dividerPositions="0.5277777777777778" layoutX="97.0" layoutY="73.0" orientation="VERTICAL" prefHeight="398.0" prefWidth="417.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                        <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Ingredientes">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                        <AnchorPane layoutX="81.0" layoutY="11.0" minHeight="0.0" minWidth="0.0" prefHeight="177.0" prefWidth="415.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <GridPane layoutX="85.0" layoutY="57.0" prefHeight="100.0" prefWidth="160.0" stylesheets="@application.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                  <columnConstraints>
+                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                  </columnConstraints>
+                                                  <rowConstraints>
+                                                    <RowConstraints maxHeight="167.0" minHeight="10.0" prefHeight="149.0" vgrow="SOMETIMES" />
+                                                    <RowConstraints maxHeight="97.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+                                                  </rowConstraints>
+                                                   <children>
+                                                      <ProgressBar fx:id="progressBar" prefHeight="60.0" prefWidth="150.0" progress="0.0" rotate="-90.0" styleClass="yellow-bar" />
+                                                      <ProgressBar fx:id="progressBar1" prefHeight="60.0" prefWidth="150.0" progress="0.0" rotate="-90.0" styleClass="orange-bar" GridPane.columnIndex="1" />
+                                                      <ProgressBar fx:id="progressBar11" prefHeight="60.0" prefWidth="150.0" progress="0.0" rotate="-90.0" styleClass="yellow-bar" GridPane.columnIndex="2" />
+                                                      <ProgressBar fx:id="waterBar" prefHeight="60.0" prefWidth="150.0" progress="1.0" rotate="-90.0" GridPane.columnIndex="4" />
+                                                      <Label text="Recipiente IV" translateX="10.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                                      <Label text="Recipiente I" translateX="10.0" GridPane.rowIndex="1" />
+                                                      <Label text="Recipiente II" translateX="10.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                      <Label text="Recipiente III" translateX="10.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                                      <ProgressBar fx:id="progressBar112" prefHeight="60.0" prefWidth="150.0" progress="0.0" rotate="-90.0" styleClass="yellow-bar" GridPane.columnIndex="3" />
+                                                      <Label text="Água" translateX="20.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                                      <Button mnemonicParsing="false" onAction="#onButtonClick" text="fill" translateX="50.0" translateY="60.0" GridPane.columnIndex="4" />
+                                                   </children>
+                                                </GridPane>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="118.0" prefWidth="415.0">
+                           <children>
+                              <TabPane layoutX="14.0" prefHeight="184.0" prefWidth="437.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <tabs>
+                                  <Tab text="Saldo">
+                                       <content>
+                                          <GridPane>
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="336.0" minWidth="10.0" prefWidth="336.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="212.0" minWidth="10.0" prefWidth="101.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <Pane prefHeight="155.0" prefWidth="107.0" GridPane.columnIndex="1">
+                                                   <children>
+                                                      <Label layoutX="35.0" layoutY="14.0" text="Saldo">
+                                                         <font>
+                                                            <Font name="System Bold" size="12.0" />
+                                                         </font></Label>
+                                                      <Button layoutX="28.0" layoutY="109.0" mnemonicParsing="false" text="Sacar" />
+                                                      <Button layoutX="19.0" layoutY="71.0" mnemonicParsing="false" text="Detalhes" />
+                                                      <Label layoutX="28.0" layoutY="38.0" text="1200,00" />
+                                                      <Label layoutX="5.0" layoutY="38.0" text="R$" />
+                                                   </children>
+                                                </Pane>
+                                                <BarChart>
+                                                  <xAxis>
+                                                    <CategoryAxis side="BOTTOM" />
+                                                  </xAxis>
+                                                  <yAxis>
+                                                    <NumberAxis side="LEFT" />
+                                                  </yAxis>
+                                                </BarChart>
+                                             </children>
+                                          </GridPane>
+                                       </content>
+                                    </Tab>
+                                  <Tab text="Troco" />
+                                </tabs>
+                              </TabPane>
+                           </children></AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
