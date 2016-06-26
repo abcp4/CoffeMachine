@@ -11,9 +11,9 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminController">
    <children>
-      <SplitPane dividerPositions="0.2608695652173913" layoutX="200.0" layoutY="83.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <SplitPane dividerPositions="0.25752508361204013" layoutX="200.0" layoutY="83.0" maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+          <AnchorPane maxHeight="400.0" maxWidth="150.0" minHeight="400.0" minWidth="150.0" prefHeight="400.0" prefWidth="150.0">
                <children>
                   <SplitMenuButton layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text="Café">
                     <items>
@@ -24,8 +24,8 @@
                   </SplitMenuButton>
                   <SplitMenuButton layoutX="14.0" layoutY="51.0" mnemonicParsing="false" text="Ingredientes ">
                      <items>
-                        <MenuItem mnemonicParsing="false" text="Cadastrar" />
-                        <MenuItem mnemonicParsing="false" text="Editar" />
+                        <MenuItem fx:id="addIngredient" mnemonicParsing="false" text="Cadastrar" />
+                        <MenuItem fx:id="editIngredient" mnemonicParsing="false" text="Editar" />
                         <MenuItem mnemonicParsing="false" text="Remover ingrediente" />
                      </items>
                   </SplitMenuButton>
@@ -34,7 +34,7 @@
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                <children>
-                  <SplitPane dividerPositions="0.5277777777777778" layoutX="97.0" layoutY="73.0" orientation="VERTICAL" prefHeight="398.0" prefWidth="417.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <SplitPane dividerPositions="0.5277777777777778" layoutX="97.0" layoutY="73.0" maxHeight="400.0" maxWidth="400.0" minHeight="400.0" minWidth="400.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <items>
                         <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
                           <tabs>
@@ -119,11 +119,16 @@
                                     </AnchorPane>
                               </content>
                             </Tab>
+                              <Tab text="Cafés">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                </content>
+                              </Tab>
                           </tabs>
                         </TabPane>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="118.0" prefWidth="415.0">
+                      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="176.0" prefWidth="440.0">
                            <children>
-                              <TabPane layoutX="14.0" prefHeight="184.0" prefWidth="437.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <TabPane layoutX="14.0" maxHeight="180.0" maxWidth="440.0" minHeight="171.0" minWidth="440.0" prefHeight="176.0" prefWidth="440.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                 <tabs>
                                   <Tab text="Saldo">
                                        <content>
