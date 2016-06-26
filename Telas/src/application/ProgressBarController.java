@@ -1,9 +1,17 @@
 package application;
 
+import java.io.IOException;
+
 import javafx.concurrent.Task;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.ProgressBar;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 
 public class ProgressBarController {
     private Task copyWorker;
@@ -13,8 +21,7 @@ public class ProgressBarController {
     private float progress;
     @FXML
     private Button pbPlus, pbMinus;
-    
-
+ 
     @FXML
     private void onButtonClick() {
          copyWorker = createWorker();
