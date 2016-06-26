@@ -67,7 +67,8 @@
                                                       <Label text="Recipiente III" translateX="10.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
                                                       <ProgressBar fx:id="progressBar112" prefHeight="60.0" prefWidth="150.0" progress="0.0" rotate="-90.0" styleClass="yellow-bar" GridPane.columnIndex="3" />
                                                       <Label text="Água" translateX="20.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-                                                      <Button mnemonicParsing="false" onAction="#onButtonClick" text="fill" translateX="50.0" translateY="60.0" GridPane.columnIndex="4" />
+                                                      <Button fx:id="pbPlus" mnemonicParsing="false" onAction="#onButtonClick" text="+" translateX="50.0" translateY="60.0" GridPane.columnIndex="4" />
+                                                      <Button fx:id="pbMinus" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="25.0" prefWidth="25.0" text="-" translateX="20.0" translateY="60.0" GridPane.columnIndex="4" />
                                                    </children>
                                                 </GridPane>
                                              </children>

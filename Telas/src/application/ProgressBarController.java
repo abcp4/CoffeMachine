@@ -2,6 +2,7 @@ package application;
 
 import javafx.concurrent.Task;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.ProgressBar;
 
 public class ProgressBarController {
@@ -9,6 +10,10 @@ public class ProgressBarController {
 
     @FXML
     private ProgressBar waterBar;
+    private float progress;
+    @FXML
+    private Button pbPlus, pbMinus;
+    
 
     @FXML
     private void onButtonClick() {
