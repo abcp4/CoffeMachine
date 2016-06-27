@@ -17,17 +17,9 @@
                <children>
                   <SplitMenuButton layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text="Café">
                     <items>
-                      <MenuItem mnemonicParsing="false" text="Cadastrar" />
-                        <MenuItem mnemonicParsing="false" text="Editar" />
-                      <MenuItem mnemonicParsing="false" text="Remover café" />
+                      <MenuItem fx:id="addCoffee" mnemonicParsing="false" text="Cadastrar" />
+                        <MenuItem fx:id="editCoffee" mnemonicParsing="false" text="Procurar" />
                     </items>
-                  </SplitMenuButton>
-                  <SplitMenuButton layoutX="14.0" layoutY="51.0" mnemonicParsing="false" text="Ingredientes ">
-                     <items>
-                        <MenuItem fx:id="addIngredient" mnemonicParsing="false" text="Cadastrar" />
-                        <MenuItem fx:id="editIngredient" mnemonicParsing="false" text="Editar" />
-                        <MenuItem mnemonicParsing="false" text="Remover ingrediente" />
-                     </items>
                   </SplitMenuButton>
                   <Button layoutX="106.0" layoutY="359.0" mnemonicParsing="false" text="Sair" />
                </children>

@@ -4,8 +4,6 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -16,21 +14,17 @@ import javafx.scene.control.MenuItem;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
-public class AdminController implements Initializable {
+public class CoffeeController implements Initializable {
 
     @FXML //  fx:id="waterDetails"
-    private Button waterDetails;
-    @FXML
-    private MenuItem addCoffee, editCoffee; // Value injected by FXMLLoader
+    private Button criaReceita;
     //@FXML
     //private MenuItem addIngredient, editIngredient;
 
     @Override // This method is called by the FXMLLoader when initialization is complete
     public void initialize(URL fxmlFileLocation, ResourceBundle resources) {
         // initialize your logic here: all @FXML variables will have been injected
-    	waterDetails.setOnAction(e -> openView("Ingrediente::Editar","RecipeView.fxml"));
-    	addCoffee.setOnAction(e -> openView("Café::Cadastrar","CoffeeView.fxml"));
-    	editCoffee.setOnAction(e -> openView("Café::Procurar","EditCoffeeView.fxml"));
+    	criaReceita.setOnAction(e -> openView("Receita::Criar","IngredientView.fxml"));
 
     }
     
@@ -51,5 +45,5 @@ public class AdminController implements Initializable {
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.showAndWait();
    }
-    
+
 }

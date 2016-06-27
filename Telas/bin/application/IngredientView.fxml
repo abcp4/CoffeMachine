@@ -1,43 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.text.*?>
-<?import javafx.scene.control.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="250.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
-   <children>
-      <GridPane layoutX="42.0" layoutY="33.0" prefHeight="141.0" prefWidth="219.0">
-         <children>
-            <Label text="Nome:" />
-            <TextField GridPane.columnIndex="1" />
-            <Label text="Quantidade:" GridPane.rowIndex="1" />
-            <TextField prefHeight="25.0" prefWidth="40.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Label text="Tipo:" GridPane.rowIndex="2" />
-            <SplitMenuButton mnemonicParsing="false" text="unidade" GridPane.columnIndex="1" GridPane.rowIndex="2">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="quilo" />
-                  <MenuItem mnemonicParsing="false" text="litro" />
-               </items>
-            </SplitMenuButton>
-         </children>
-         <columnConstraints>
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="127.0" minWidth="10.0" prefWidth="92.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="171.0" minWidth="10.0" prefWidth="171.0" />
-         </columnConstraints>
-         <rowConstraints>
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-         </rowConstraints>
-      </GridPane>
-      <HBox layoutX="161.0" layoutY="200.0" spacing="10.0" translateX="-10.0">
-         <children>
-            <Button layoutX="161.0" layoutY="215.0" mnemonicParsing="false" text="Confirmar" />
-            <Button layoutX="221.0" layoutY="215.0" mnemonicParsing="false" text="Cancelar" />
-         </children>
-      </HBox>
-   </children>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
+	<!-- TODO Add Nodes -->
 </AnchorPane>
+
