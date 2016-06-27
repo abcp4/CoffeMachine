@@ -39,7 +39,7 @@
                   <Label text="Conteúdo:" />
                   <TextField alignment="CENTER" text="Água" GridPane.columnIndex="1" />
                   <Label text="Quantidade:" GridPane.rowIndex="1" />
-                  <TextField alignment="CENTER" text="10" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="numericField" alignment="CENTER" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                </children>
             </GridPane>
             <Button fx:id="recipeConfirm" defaultButton="true" layoutX="14.0" layoutY="259.0" mnemonicParsing="false" text="Confirmar" />
@@ -51,7 +51,7 @@
     <AnchorPane maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="298.0" prefWidth="141.0">
          <children>
             <ProgressBar fx:id="recipeBar" layoutX="-25.0" layoutY="107.0" prefHeight="50.0" prefWidth="200.0" progress="0.125" rotate="-90.0" />
-            <Label layoutX="55.0" layoutY="14.0" text="12.5%" textFill="#cd2f2f" textOverrun="CLIP">
+            <Label fx:id="percentRecipe" layoutX="55.0" layoutY="14.0" text="12.5%" textFill="#cd2f2f" textOverrun="CLIP">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
