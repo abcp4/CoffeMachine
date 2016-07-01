@@ -1,5 +1,4 @@
 # CoffeeMachine 
-Módulo Administrativo:
 
  - O sistema deve permitir que cafés sejam cadastrados, incluindo seu nome, ingredientes e preços;
 
