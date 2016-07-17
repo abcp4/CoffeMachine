@@ -85,7 +85,7 @@
                   <Label text="Ingrediente: 50 ml" GridPane.columnIndex="1" />
                   <ImageView fitHeight="167.0" fitWidth="162.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
                      <image>
-                        <Image url="@../../../../Downloads/CoffeeMachine-Kuroyukihime/Telas/assets/imgs/cafecomleite.gif" />
+                        <Image url="@../../assets/imgs/cafecomleite.gif" />
                      </image>
                   </ImageView>
                   <Label text="Cafe com leite" />
