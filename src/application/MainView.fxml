@@ -24,12 +24,12 @@
          <children>
             <HBox>
                <children>
-                  <RadioButton mnemonicParsing="false" text="Com Açucar" />
+                  <RadioButton mnemonicParsing="false" text="Com Açúcar" />
                   <TextField prefHeight="26.0" prefWidth="61.0" />
                   <Label text="cubos" />
                </children>
             </HBox>
-            <RadioButton mnemonicParsing="false" selected="true" text="Sem Açucar" />
+            <RadioButton mnemonicParsing="false" selected="true" text="Sem Açúcar" />
          </children>
       </VBox>
       <ListView layoutX="31.0" layoutY="54.0" prefHeight="200.0" prefWidth="200.0" />
