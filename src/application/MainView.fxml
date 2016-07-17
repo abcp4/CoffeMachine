@@ -1,26 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
    <children>
-      <TabPane>
-         <tabs>
-            <Tab>
-               <content>
-                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
-                     <children>
-                        <Button fx:id="myButton" layoutX="534.0" layoutY="8.0" mnemonicParsing="false" text="Button" />
-                        <Label layoutX="272.0" layoutY="169.0" stylesheets="@../../assets/style/fonts.css" text="Hello World!" />
-                     </children>
-                  </AnchorPane>
-               </content>
-            </Tab>
-         </tabs>
-      </TabPane>
+      <VBox layoutX="30.0" layoutY="281.0">
+         <children>
+            <HBox>
+               <children>
+                  <RadioButton mnemonicParsing="false" text="Com Açucar" />
+                  <TextField prefHeight="26.0" prefWidth="61.0" />
+                  <Label text="cubos" />
+               </children>
+            </HBox>
+            <RadioButton mnemonicParsing="false" selected="true" text="Sem Açucar" />
+         </children>
+      </VBox>
+      <ListView layoutX="31.0" layoutY="54.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="31.0" layoutY="27.0" text="Cafes">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="262.0" layoutY="27.0" text="Detalhes">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <VBox layoutX="451.0" layoutY="277.0">
+         <children>
+            <Label text="Subtotal:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label text="R$ 2,50">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Label layoutX="273.0" layoutY="277.0" text="Tamanho do copo:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <HBox layoutX="401.0" layoutY="364.0" spacing="20.0">
+         <children>
+            <Button mnemonicParsing="false" text="Comprar" />
+            <Button mnemonicParsing="false" text="Desfazer" />
+         </children>
+      </HBox>
+      <ChoiceBox layoutX="275.0" layoutY="297.0" prefHeight="26.0" prefWidth="97.0" />
+      <ScrollPane layoutX="242.0" layoutY="54.0" prefHeight="200.0" prefWidth="343.0">
+         <content>
+            <GridPane prefHeight="190.0" prefWidth="331.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="86.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="163.0" minHeight="10.0" prefHeight="163.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextArea prefHeight="163.0" prefWidth="175.0" text="35 ml de água quente&#10;15 ml de leite quente&#10;1 colher (sobremesa) média de café" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label text="Ingrediente: 50 ml" GridPane.columnIndex="1" />
+                  <ImageView fitHeight="167.0" fitWidth="162.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../../../Downloads/CoffeeMachine-Kuroyukihime/Telas/assets/imgs/cafecomleite.gif" />
+                     </image>
+                  </ImageView>
+                  <Label text="Cafe com leite" />
+               </children>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <Button fx:id="loginButton" layoutX="535.0" layoutY="11.0" mnemonicParsing="false" text="Login" />
    </children>
-</StackPane>
+</Pane>

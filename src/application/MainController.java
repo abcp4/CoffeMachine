@@ -12,25 +12,26 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 public class MainController implements Initializable {
 
-    @FXML //  fx:id="myButton"
-    private Button myButton; // Value injected by FXMLLoader
+    @FXML //  fx:id="loginButton"
+    private Button loginButton, buyButton;
 
     @Override // This method is called by the FXMLLoader when initialization is complete
     public void initialize(URL fxmlFileLocation, ResourceBundle resources) {
-        assert myButton != null : "fx:id=\"myButton\" was not injected: check your FXML file 'MainView.fxml'.";
+        assert loginButton != null : "fx:id=\"loginButton\" was not injected: check your FXML file 'MainView.fxml'.";
 
         // initialize your logic here: all @FXML variables will have been injected
-        myButton.setOnAction(new EventHandler<ActionEvent>() {
+        loginButton.setOnAction(new EventHandler<ActionEvent>() {
         	Stage stage; 
             Parent root;
             
             @Override
             public void handle(ActionEvent event) {
-            	 stage=(Stage) myButton.getScene().getWindow();
+            	 stage=(Stage) loginButton.getScene().getWindow();
             	 try {
 					root = FXMLLoader.load(getClass().getResource("LoginView.fxml"));
 				} catch (IOException e) {
@@ -42,6 +43,27 @@ public class MainController implements Initializable {
                  stage.show();
             }
         });
+        
+        //buyButton.setOnAction(e -> openView("Café::Confirmar Compra","SaleView.fxml"));
     }
 
+    /*
+    public void openView(String title, String view){
+    	Stage stage; 
+    	Parent root = null;
+        
+        stage = new Stage();
+        try {
+        		root = FXMLLoader.load(getClass().getResource(view));
+			} catch (IOException e) {
+					// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        stage.setScene(new Scene(root));
+        stage.setTitle(title);
+        stage.setResizable(false);
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.showAndWait();
+   }
+   */
 }

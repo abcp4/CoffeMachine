@@ -5,7 +5,7 @@ import java.util.logging.Logger;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.layout.StackPane;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public class Main extends Application {
@@ -20,7 +20,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            StackPane page = (StackPane) FXMLLoader.load(Main.class.getResource("MainView.fxml"));
+            Pane page = (Pane) FXMLLoader.load(Main.class.getResource("MainView.fxml"));
             Scene scene = new Scene(page);
             primaryStage.setScene(scene);
             //primaryStage.setTitle("FXML is Simple");
