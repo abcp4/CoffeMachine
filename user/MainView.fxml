@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../assets/imgs/Style.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.MainController">
+   <children>
+      <VBox layoutX="30.0" layoutY="281.0">
+         <children>
+            <HBox />
+         </children>
+      </VBox>
+      <ListView fx:id="cafeList" layoutX="31.0" layoutY="54.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="31.0" layoutY="27.0" text="Cafes">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="242.0" layoutY="27.0" text="Detalhes">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <VBox layoutX="451.0" layoutY="277.0">
+         <children>
+            <Label text="Subtotal:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="subTotalLabel" text="R$ 2,50">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Label layoutX="31.0" layoutY="281.0" text="Tamanho do copo:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <HBox layoutX="401.0" layoutY="364.0" spacing="20.0" />
+      <ChoiceBox fx:id="cupSizeButton" layoutX="31.0" layoutY="302.0" prefHeight="26.0" prefWidth="97.0" />
+      <ScrollPane layoutX="242.0" layoutY="54.0" prefHeight="200.0" prefWidth="343.0">
+         <content>
+            <GridPane prefHeight="190.0" prefWidth="331.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="86.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="163.0" minHeight="10.0" prefHeight="163.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Ingrediente: 50 ml" GridPane.columnIndex="1" />
+                  <ImageView fitHeight="167.0" fitWidth="162.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../assets/imgs/cafe.png" />
+                     </image>
+                  </ImageView>
+                  <ListView fx:id="ingredientList" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <Button fx:id="loginButton" layoutX="495.0" layoutY="11.0" mnemonicParsing="false" text="Login" />
+      <Button fx:id="buyButton" layoutX="474.0" layoutY="365.0" mnemonicParsing="false" text="Comprar" />
+   </children>
+</Pane>
